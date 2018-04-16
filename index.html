@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>dropZone</title>
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="body-wrap">
+        <section id="intro">
+            <div class="intro-content">
+                <h1>The dropZone</h1>
+                <h4>by</>
+                <h3>Danni Peters</h4>
+                <a href="#whatItis" class="btn hvr-bounce-to-bottom">What is it?</a>
+            </div>
+        </section>
+
+        <img class="skydiver" src="images/skydiver.png" alt="">
+        <div id="emptySpace"></div>
+
+        <div class="mask">
+
+        <section id="whatItis" class="container-fluid">
+            <div class="wrap col-md-11">
+                <div class="col-md-5 what-is-left">
+                    <h3>The dropZone</h3>
+                </div>
+                <div class="col-md-5 col-md-offset-1 what-is-right">
+                    <p class="bigger-p">
+                        The dropZone, or dropZones, are two "hot" folders where users drop files (jpg, excel, word, etc.) with a specific naming
+                        standard, that are then ingested via a script into the Multimedia module.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="center-text container-fluid">
+            <h3>Naming Standard for Catalog Module</h3>
+            <hr class="red">
+            <div class="wrap uncenter marg-top col-md-11">
+                <div class="col-md-5 col-md-offset-1 standard-left">
+                    <ul class="bigger-p">
+                        <li>creator= LastName, FirstName</li>
+                        <li>resource type= Museum for Publication</li>
+                        <li>object number= 3-21-1986</li>
+                        <li>sequence number= 01</li>
+                    </ul>
+                </div>
+                <div class="col-md-5 col-md-offset-1 standard-right">
+                    <img src="images/01filename.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="center-text">
+            <div class="drop">
+                <h3>User drops file(s) into folder</h3>
+                <hr class="red">
+                <img data-aos="fade-down-left" data-aos-easing="linear" data-aos-duration="800" src="images/02screenshotdropzonefile.PNG">                
+                <img data-aos="fade-down-right" data-aos-easing="linear" data-aos-duration="800" src="images/03screenshotofdropzone.PNG">
+            </div>
+        </section>
+
+        <section class="center-text">
+            <h3>Script begins to run</h3>
+            <hr class="red">
+                <img data-aos="fade-down-left" data-aos-easing="linear" data-aos-duration="800" src="images/04screenshotoffileindropzone.png">
+                <img data-aos="fade-down-right" data-aos-easing="linear" data-aos-duration="800" src="images/05screenshotoffilegonedropzone.png">
+        </section>
+
+        <section class="center-text container-fluid">
+            <h3>Query Multimeida module for new records</h3>
+            <hr class="red">
+            <img data-aos="fade-down-left" data-aos-easing="linear" data-aos-duration="800" src="images/06dropzonequerydatafields.PNG">
+
+            <p class="bigger-p col-md-6 col-md-offset-3 marg-bot">The script strips the creator and resource type from the file name, so that the file (idnentifier) becomes the object number and sequence number. The creator and resource type from the file are inserted into the Creator and Resource Type field</p>
+            <img data-aos="fade-down-right" data-aos-easing="linear" data-aos-duration="800" src="images/07dropzonereview.PNG"> 
+            <p class="bigger-p col-md-6 col-md-offset-3 marg-bot">A list view is used so users can quickly review.</p>
+            <img data-aos="fade-down-left" data-aos-easing="linear" data-aos-duration="800" src="images/08finalcheck.PNG">
+
+        </section>
+
+        <section class="container-fluid">
+            <div class="wrap col-md-11">
+                <div class="btn-left col-md-6">
+                    <h3>By the Numbers</h3>
+                </div>
+                <div class="btn-right col-md-4 col-md-offset-1">
+                    <ul>
+                        <li>FY2010= 21,459 (all data load)</li>
+                        <li>FY2011= 36,534 (webaccount 8,099)</li>
+                        <li>FY 2012= 42,701 (webccount 14,478)</li>
+                        <li>FY 2013 = 36,154 – collections went live with SOLR (image harvester 16,291)</li>
+                        <li>FY2014= 44,424 – Catalog Card Project Push (image harvester 23,917)</li>
+                        <li>FY2015= 29,382 (image harvester 18,993)</li>
+                        <li>FY2016= 36,358 dz introduced (image harvester 4,117 ; dz 20,190)</li>
+                        <li>FY2017= 37,061 (dz 26,492)</li>
+                        <li>FY2018= 27,013 (dz 26,030)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        </div>
+
+        <div class="thanks center-text">
+            <h2>Thank You!</h2>
+        </div>
+    </div>
+
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
