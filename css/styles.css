@@ -261,8 +261,8 @@ hr.red {
 /* progress bar */
 
 progress[value] {
-    width:20%;
-    height: 25px;
+    /* width:20%; */
+    /* height: 25px; */
     border: 1px solid #F7F7FF;
     border-radius: 2px;
     margin: 0 0 1.5em 0;
