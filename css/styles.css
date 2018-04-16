@@ -257,3 +257,43 @@ hr.red {
     -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
+
+/* progress bar */
+
+progress[value] {
+    width:20%;
+    height: 25px;
+    border: 1px solid #F7F7FF;
+    border-radius: 2px;
+    margin: 0 0 1.5em 0;
+    color: #F7F7FF;
+    background: -moz-linear-gradient(left, #D77A61 0%, #D77A61 19%, transparent 19%, transparent 21%, #D77A61 21%, #D77A61 39%, transparent 39%, transparent 41%, #D77A61 41%, #D77A61 59%, transparent 39%, transparent 41%, #D77A61 41%, #D77A61 59%, transparent 59%, transparent 61%, #D77A61 61%, #D77A61 79%, transparent 79%, transparent 81%, #D77A61 81%, #D77A61 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #D77A61), color-stop(19%, #D77A61), color-stop(19%, transparent), color-stop(21%, transparent), color-stop(21%, #D77A61), color-stop(39%, #D77A61), color-stop(39%, transparent), color-stop(41%, transparent), color-stop(41%, #D77A61), color-stop(59%, #D77A61), color-stop(39%, transparent), color-stop(41%, transparent), color-stop(41%, #D77A61), color-stop(59%, #D77A61), color-stop(59%, transparent), color-stop(61%, transparent), color-stop(61%, #D77A61), color-stop(79%, #D77A61), color-stop(79%, transparent), color-stop(81%, transparent), color-stop(81%, #D77A61), color-stop(100%, #D77A61));
+    background: -webkit-linear-gradient(left, #D77A61 0%, #D77A61 19%, transparent 19%, transparent 21%, #D77A61 21%, #D77A61 39%, transparent 39%, transparent 41%, #D77A61 41%, #D77A61 59%, transparent 39%, transparent 41%, #D77A61 41%, #D77A61 59%, transparent 59%, transparent 61%, #D77A61 61%, #D77A61 79%, transparent 79%, transparent 81%, #D77A61 81%, #D77A61 100%);
+    background: -o-linear-gradient(left, #D77A61 0%, #D77A61 19%, transparent 19%, transparent 21%, #D77A61 21%, #D77A61 39%, transparent 39%, transparent 41%, #D77A61 41%, #D77A61 59%, transparent 39%, transparent 41%, #D77A61 41%, #D77A61 59%, transparent 59%, transparent 61%, #D77A61 61%, #D77A61 79%, transparent 79%, transparent 81%, #D77A61 81%, #D77A61 100%);
+    background: -ms-linear-gradient(left, #D77A61 0%, #D77A61 19%, transparent 19%, transparent 21%, #D77A61 21%, #D77A61 39%, transparent 39%, transparent 41%, #D77A61 41%, #D77A61 59%, transparent 39%, transparent 41%, #D77A61 41%, #D77A61 59%, transparent 59%, transparent 61%, #D77A61 61%, #D77A61 79%, transparent 79%, transparent 81%, #D77A61 81%, #D77A61 100%);
+    background: linear-gradient(to right, #D77A61 0%, #D77A61 19%, transparent 19%, transparent 21%, #D77A61 21%, #D77A61 39%, transparent 39%, transparent 41%, #D77A61 41%, #D77A61 59%, transparent 39%, transparent 41%, #D77A61 41%, #D77A61 59%, transparent 59%, transparent 61%, #D77A61 61%, #D77A61 79%, transparent 79%, transparent 81%, #D77A61 81%, #D77A61 100%);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: transparent;
+    position: relative;
+}
+
+progress[value]::-webkit-progress-value {
+    width: 100%;
+    background-color: #F7F7FF;
+    background-size: 100%;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: width 0.6s ease;
+    -moz-transition: width 0.6s ease;
+    -o-transition: width 0.6s ease;
+    transition: width 0.6s ease;
+}
