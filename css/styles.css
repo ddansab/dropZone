@@ -189,6 +189,13 @@ hr.red {
     z-index: -1;
 }
 
+.arrow {
+    font-size: 5em;
+    color: #D77A61;
+    margin-bottom: 10px;
+    margin-top: -22px;
+}
+
 .thanks h2 {
     color: #D77A61;
 }
