@@ -264,7 +264,6 @@ progress[value] {
     /* width:20%; */
     /* height: 25px; */
     border: 1px solid #F7F7FF;
-    border-radius: 2px;
     margin: 0 0 1.5em 0;
     color: #F7F7FF;
     background: -moz-linear-gradient(left, #D77A61 0%, #D77A61 19%, transparent 19%, transparent 21%, #D77A61 21%, #D77A61 39%, transparent 39%, transparent 41%, #D77A61 41%, #D77A61 59%, transparent 39%, transparent 41%, #D77A61 41%, #D77A61 59%, transparent 59%, transparent 61%, #D77A61 61%, #D77A61 79%, transparent 79%, transparent 81%, #D77A61 81%, #D77A61 100%);
